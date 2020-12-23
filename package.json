@@ -1,0 +1,17 @@
+{
+  "name": "new_semaphore",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "phase1": "sh ../scripts/run_phase1.sh",
+    "compile": "circom circuits/semaphore.circom --r1cs build/circuit.r1cs --wasm build/circuit.wasm --sym build/circuit.sym -v",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "circom": "^0.5.35",
+    "circomlib": "^0.3.0",
+    "snarkjs": "^0.3.49"
+  }
+}
